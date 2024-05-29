@@ -23,7 +23,6 @@ public class LoginTest extends BaseTest{
         InventoryPage inventoryPage = new InventoryPage(driver);
         assertTrue(inventoryPage.inventoryListIsDisplayed());
         assertEquals("Products",inventoryPage.tittleTextIsProducts());
-
     }
 
     @Test

@@ -19,4 +19,7 @@ public class BaseTest {
     public void tearDown(){
         driver.quit();
     }
+
+
+    User validUser = new User("standard_user", "secret_sauce");
 }

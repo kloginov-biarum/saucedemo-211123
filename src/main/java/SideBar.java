@@ -5,15 +5,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.net.IDN;
 import java.time.Duration;
 
-public class SideBar {
+public class SideBar extends BasePage{
     WebDriver driver;
 
     public SideBar(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     //Logout link
