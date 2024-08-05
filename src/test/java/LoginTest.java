@@ -17,8 +17,9 @@ public class LoginTest extends BaseTest{
     @Test
     public void validDataWithPO()  {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterValueToUsername("standard_user");
-        loginPage.enterValueToPasswordInputField("secret_sauce");
+        loginPage.enterValueToUsername(validUser);
+        loginPage.enterValueToPasswordInputField(validUser);
+
         loginPage.clickOnTheLoginButton();
         InventoryPage inventoryPage = new InventoryPage(driver);
         assertTrue(inventoryPage.inventoryListIsDisplayed());

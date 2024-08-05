@@ -22,13 +22,12 @@ public class LoginPage extends BasePage{
     @FindBy(tagName = "h3")
     private WebElement errorMessageText;
 
-    public void enterValueToUsername(String usernameValue){
-        enterTextToElement(usernameValue, usernameInputField);
+    public void enterValueToUsername(User user){
+        enterTextToElement(user.getUsername(), usernameInputField);
     }
 
-    public void enterValueToPasswordInputField(String passwordValue){
-        enterTextToElement(passwordValue, passwordInputField);
-        return;
+    public void enterValueToPasswordInputField(User user){
+        enterTextToElement(user.getPassword(), passwordInputField);
     }
 
     public void clickOnTheLoginButton(){

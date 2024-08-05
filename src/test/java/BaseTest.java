@@ -11,7 +11,7 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver",
                 "/Users/ergrevegvrg/Downloads/chromedriver-mac-arm64-4/chromedriver");
         driver = new ChromeDriver();
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+       //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://www.saucedemo.com/");
     }
 
